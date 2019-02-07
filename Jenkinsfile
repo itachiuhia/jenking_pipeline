@@ -11,6 +11,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                sh  "git config --global user.name 'itachiuhia'"
+                sh "git config --global user.email '06harshgtm@gmail.com'"
                 sh "git init"
                 sh 'git add Jenkinstest.class'
                 sh "git commit -m 'Final commit'"
