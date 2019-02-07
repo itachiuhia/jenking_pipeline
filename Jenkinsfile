@@ -11,6 +11,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                sh "git init"
                 sh 'git add Jenkinstest.class'
                 sh "git commit -m 'Final commit'"
                 sh "git push -u origin master"
