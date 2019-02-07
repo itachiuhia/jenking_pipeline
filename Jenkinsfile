@@ -13,7 +13,6 @@ pipeline {
             steps {
                 sh 'git add Jenkinstest.class'
                 sh "git commit -m 'Final commit'"
-                sh "git remote add origin https://github.com/itachiuhia/jenking_pipeline.git"
                 sh "git push -u origin master"
             }
         }
