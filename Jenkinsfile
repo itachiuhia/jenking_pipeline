@@ -14,7 +14,7 @@ pipeline {
                 sh "git init"
                 sh 'git add Jenkinstest.class'
                 sh "git commit -m 'Final commit'"
-                sh "git push -u origin master"
+                sh "git push origin master"
             }
         }
     }
